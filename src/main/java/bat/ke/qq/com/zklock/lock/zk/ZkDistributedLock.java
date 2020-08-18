@@ -58,6 +58,7 @@ public class ZkDistributedLock extends AbstractLock implements IZkDataListener {
     @Override
     public void deLock(){
         if(zkclient!=null){
+            //删除临时节点
             zkclient.delete(path);
             System.out.println("---------------释放锁资源---------------");
         }

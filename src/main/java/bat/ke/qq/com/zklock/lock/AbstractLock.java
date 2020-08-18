@@ -24,5 +24,6 @@ public abstract class AbstractLock implements Lock {
 
     public abstract void waitLock();
 
+    //删除锁
     public abstract void deLock();
 }
